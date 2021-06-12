@@ -42,5 +42,5 @@
     <li> DiscordBotList - https://discordbotlist.com/bots/cornhub
     <li> Top.gg - https://top.gg/bot/851938911437717595
     <li> Bot Invite - https://discord.com/api/oauth2/authorize?client_id=851938911437717595&permissions=27648&scope=bot
-    <li> Join the <code>AJ.Productions</code> discord server and open a ticket for bot related help. https://discord.gg/4dxXgXN62J
+    <li> Join the <code>AJ.Productions</code> discord server and open a ticket for bot related help. https://discord.gg/FhYGAMrW6J
   </ul>
