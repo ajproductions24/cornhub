@@ -24,7 +24,7 @@ BUTTER_CORN = ["https://onepotrecipes.com/wp-content/uploads/2018/10/One-Pot-Boi
 
 BIG_STOCK = ["https://static2.bigstockphoto.com/2/5/3/large1500/352458521.jpg","https://c8.alamy.com/comp/2A5370H/fresh-corn-ears-with-leaves-two-big-ripe-mature-yellow-cob-2A5370H.jpg","https://static2.bigstockphoto.com/0/9/3/large1500/390073237.jpg","https://static1.bigstockphoto.com/2/9/3/large1500/392930519.jpg","https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fbfe23c089acf07b6dab335d6aa1e745e2809cccd"]
 
-MALE_CORN = ["https://cdn.ebaumsworld.com/mediaFiles/picture/252061/960137.jpg","https://www.kanojotoys.com/img/ligre/sweet-corn-cob-kernel-cock-dildo-sex-toy-3.jpg","https://previews.123rf.com/images/chaowalit/chaowalit1308/chaowalit130800012/21979887-black-corn-shape-of-a-penis.jpg",""]
+MALE_CORN = ["https://cdn.ebaumsworld.com/mediaFiles/picture/252061/960137.jpg","https://www.kanojotoys.com/img/ligre/sweet-corn-cob-kernel-cock-dildo-sex-toy-3.jpg","https://previews.123rf.com/images/chaowalit/chaowalit1308/chaowalit130800012/21979887-black-corn-shape-of-a-penis.jpg"]
 
 #Command 1
 @client.command(name = 'commands')
