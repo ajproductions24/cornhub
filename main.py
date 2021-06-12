@@ -7,7 +7,7 @@ from keep_alive import keep_alive
 
 #Bot Setup
 client = commands.Bot(command_prefix='c!', help_command=None)
-discord_token = 'DISCORD_TOKEN'
+discord_token = ''
 
 #Defining Images
 CORN = ["https://www.thegunnysack.com/wp-content/uploads/2018/06/Boiled-Corn-On-The-Cob-Recipe-720x540.jpg","https://www.jessicagavin.com/wp-content/uploads/2019/05/how-to-cook-corn-on-the-cob-8-1200.jpg","https://www.simplyhappyfoodie.com/wp-content/uploads/2018/04/instant-pot-corn-on-the-cob-1-500x500.jpg","https://www.dudafresh.com/hubfs/images-2017/p-main-corn.png","https://www.simplyrecipes.com/thmb/SeFw2HWwLCOznSTMTsdCWuydQTo=/1777x1333/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__07__Grilled-Corn-on-the-Cob-LEAD-3-2473cd41fbce489fa6d08b74a4334562.jpg"]
@@ -26,7 +26,7 @@ BIG_STOCK = ["https://static2.bigstockphoto.com/2/5/3/large1500/352458521.jpg","
 
 MALE_CORN = ["https://cdn.ebaumsworld.com/mediaFiles/picture/252061/960137.jpg","https://www.kanojotoys.com/img/ligre/sweet-corn-cob-kernel-cock-dildo-sex-toy-3.jpg","https://previews.123rf.com/images/chaowalit/chaowalit1308/chaowalit130800012/21979887-black-corn-shape-of-a-penis.jpg"]
 
-#Command 1
+#Commands Command
 @client.command(name = 'commands')
 async def commands(ctx):
     embed=discord.Embed(title="Commands", description="The commands for the **CornHub Bot** are as follows: ``c!corn`` ``c!bigcorn`` ``c!thefarmer`` ``c!butter`` ``c!megacorn`` ``c!buttercorn`` ``c!bigstock`` ``c!malecorn``", color=0xffa100)
@@ -34,7 +34,7 @@ async def commands(ctx):
     res = await client.wait_for("button_click")
     await res.message.delete()    
 
-#Command 2
+#Help Command
 @client.command(name = 'help')
 async def help(ctx):
   ctx.message.delete
@@ -43,7 +43,8 @@ async def help(ctx):
           components = [
               [
                   Button(style=2, label="Commands"),
-                  Button(style=5, label="Invite", url="https://discord.com/api/oauth2/authorize?client_id=851938911437717595&permissions=27648&scope=bot")
+                  Button(style=5, label="Invite", url="https://discord.com/api/oauth2/authorize?client_id=851938911437717595&permissions=27648&scope=bot"),
+                  Button(style=5, label="Support Server", url="https://discord.gg/FhYGAMrW6J")
               ]
         ]   
 )
@@ -53,6 +54,8 @@ async def help(ctx):
   res = await client.wait_for("button_click")
   await res.message.delete() 
 
+###Image Commands###
+    
 #Corn Command
 @client.command(name = 'corn')
 async def corn(ctx):
@@ -111,7 +114,8 @@ async def on_guild_join(guild):
         components = [
             [       
                 Button(style=2, label="Commands"),
-                Button(style=5, label="Invite", url="https://discord.com/api/oauth2/authorize?client_id=851938911437717595&permissions=27648&scope=bot")
+                Button(style=5, label="Invite", url="https://discord.com/api/oauth2/authorize?client_id=851938911437717595&permissions=27648&scope=bot"),
+                Button(style=5, label="Support Server", url="https://discord.gg/FhYGAMrW6J")
             ]
       ]      
 )
@@ -127,8 +131,6 @@ async def on_button_click(interaction):
         return
     await interaction.respond(type = 6)
   
-
-#Start
+#Startup
 keep_alive()
 client.run(discord_token)
-
